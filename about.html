@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <h1 class="container">Tables Information</h1>
+
+
+    <div class="container-col">
+        <div class="inner-container-row">
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Course</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Course Code </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Lecture</td>
+                            <td>Foreign</td>
+                        </tr>
+                        <tr>
+                            <td>Semester</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Department_No</td>
+                            <td>Foreign</td>
+                        </tr>
+                        <tr>
+                            <td>Practical</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>tutorial</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Department_No is referenced from column D_no in Department table. Lecture is referenced from column Lecture in Credit table</p>
+                    <p>Course table is in 3rd normal form.</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Staff</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Staff_id </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Salary</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Department_No</td>
+                            <td>Foreign</td>
+                        </tr>
+                        <tr>
+                            <td>DOB</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Experience</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mail</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Department_No is referenced from column D_no in Department table.</p>
+                    <p>Staff table is in 3rd normal form.</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Student</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Student_id </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>DOB</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Program</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Department_No</td>
+                            <td>Foreign</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>CPI</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Batch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mail</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Semester</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Department_No is referenced from column D_no in Department table.</p>
+                    <p>Student table is in 3rd normal form.</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner-container-row">
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Department</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Department_No </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>HOD</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Department table is in 3rd normal form.</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="col-md-7">
+                        <h2 >Inventory</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td>Item_id</td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Quantity</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Date_of_Purchase</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Model_No</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Manufacture_Date</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Inventory table is in 3rd normal form.</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Non Teaching Staff</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Staff_id </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Post</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Employment_Status</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Specialization</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Staff_id is referenced from column Staff_id in Staff table.</p>
+                    <p>Non Teaching Staff table is in 3rd normal form.</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner-container-row">
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Faculty</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Faculty_id </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Rank</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Faculty_id referenced from column Staff_id in Staff table.</p>
+                    <p>Faculty table is in 3rd normal form.</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Teaches</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td>Faculty_id</td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Course_Code</td>
+                            <td>Primary</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Faculty_id referenced from column Staff_id in Staff table. Course_Code referenced from column Course_Code in Course table.</p>
+                    <p>Teaches table is in 3rd normal form.</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Studies</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Student_id </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Course_Code</td>
+                            <td>Primary</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Student_id is referenced from column Student_id in Student table. Course_Code is referenced from column Course_Code in Course table.</p>
+                    <p>Studies table is in 3rd normal form.</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner-container-row">
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Credit</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td> Lecture </td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Tutorial</td>
+                            <td>Primary</td>
+                        </tr>
+                        <tr>
+                            <td>Practical</td>
+                            <td>Primary</td>
+                        </tr>
+                        <tr>
+                            <td>Credit</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Credit table is in 3rd normal form.</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="col-md-7">
+                    <h2 >Grade Report</h2>
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>Field</th>
+                            <th>Key</th>
+                        </tr>
+                        <tr>
+                            <td>Student_id</td>
+                            <td> Primary </td>
+                        </tr>
+                        <tr>
+                            <td>Semester</td>
+                            <td>Primary</td>
+                        </tr>
+                        <tr>
+                            <td>SPI</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <p>Student_id referenced from column Student_id in Student table.</p>
+                    <p>Grade Report table is in 3rd normal form.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
